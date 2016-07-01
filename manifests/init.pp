@@ -12,5 +12,3 @@ class graphite (
 
     include ::graphite::install
   }
-
-}
