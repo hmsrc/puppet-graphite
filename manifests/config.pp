@@ -21,7 +21,7 @@ class graphite::config (
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
-      content => template('graphite/local_settings.py.erb')
+      content => template('graphite/local_settings.py.erb'),
     }
 
   }
