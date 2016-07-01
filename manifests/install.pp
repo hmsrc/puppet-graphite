@@ -3,7 +3,7 @@ class graphite::install (
   $pkg_vers = $::graphite::pkg_vers,
   ) {
 
-    pacakge {$pkg:
+    package {$pkg:
       ensure => $pkg_vers,
     }
   }
