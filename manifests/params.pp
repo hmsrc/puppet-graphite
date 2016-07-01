@@ -21,6 +21,4 @@ class graphite::params {
   $whisper_dir = '/var/lib/carbon/whisper'
   $rrd_dir = '/var/lib/carbon/rrd'
   $data_dirs = ['WHISPER_DIR', 'RRD_DIR']
-  $index_file = '/var/lib/graphite-web/index'
-
 }
