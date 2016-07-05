@@ -2,8 +2,8 @@ SECRET_KEY = '<%= @secret_key %>'
 ALLOWED_HOSTS= [<% @allowed_hosts.each do |host| -%>'<%=host%>',<%end-%>]
 TIME_ZONE= '<%= @time_zone %>'
 LOG_RENDERING_PERFORMANCE = <% if @log_rendering_performance -%>True<% else -%>False<% end -%>
-LOG_CACHE_PERFORMANCE = <%= @log_cache_performance %>
-LOG_METRIC_ACCESS = <%= @log_cache_performance %>
+LOG_CACHE_PERFORMANCE = <% if @log_cache_performance -%>True<% else -%>False<% end -%>
+LOG_METRIC_ACCESS = <%if @log_cache_performance -%>True<% else -%>False<% end -%>
 GRAPHITE_ROOT = '<%= @graphite_root %>'
 CONF_DIR = '<%= @conf_dir %>'
 STORAGE_DIR = '<%= @storage_dir %>'
