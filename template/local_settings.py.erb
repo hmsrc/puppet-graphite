@@ -1,6 +1,6 @@
-SECRET_KEY = <%= @secret_key %>
+SECRET_KEY = '<%= @secret_key %>'
 ALLOWED_HOSTS= [<% @allowed_hosts.each do |host| -%>'<%=host%>',<%end-%>]
-TIME_ZONE= <%= @time_zone %>
+TIME_ZONE= '<%= @time_zone %>'
 LOG_RENDERING_PERFORMANCE = <%= @log_rendering_performance %>
 LOG_CACHE_PERFORMANCE = <%= @log_cache_performance %>
 LOG_METRIC_ACCESS = <%= @log_cache_performance %>
