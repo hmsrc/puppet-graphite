@@ -17,7 +17,7 @@ class graphite::config (
    $log_dir                   = $::graphite::log_dir,
    $index_file                = $::graphite::index_file,
   ) {
-    file {'/etc/graphite/local_settings.py':
+    file {'/etc/graphite-web/local_settings.py':
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
